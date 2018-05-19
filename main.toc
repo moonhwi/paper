@@ -38,13 +38,11 @@
 \contentsline {section}{\numberline {3.4}路由与数据传送性能}{23}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}可用路由数目}{23}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}网络平均寿命}{25}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}传送数据类型}{25}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}传送数据类型}{26}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}拓扑发现的另一种方案}{26}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}成簇}{26}{subsection.3.5.1}
-\contentsline {chapter}{\numberline {4}总结与展望}{27}{chapter.4}
-\contentsline {chapter}{参考文献}{28}{section*.2}
-\contentsline {chapter}{致\hskip 2em\relax {}谢}{29}{section*.4}
-\contentsline {chapter}{附\hskip 2em\relax {}录}{30}{section*.7}
-\contentsline {section}{附录1\hskip 1em\relax {}缩略语表}{30}{section*.8}
-\contentsline {section}{附录2\hskip 1em\relax {}数学符号}{30}{section*.9}
+\contentsline {chapter}{\numberline {4}总结与展望}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}论文总结}{28}{section.4.1}
+\contentsline {section}{\numberline {4.2}论文展望}{28}{section.4.2}
+\contentsline {chapter}{参考文献}{29}{section*.2}
+\contentsline {chapter}{致\hskip 2em\relax {}谢}{30}{section*.4}
 \contentsfinish 

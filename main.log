@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.4)  18 MAY 2018 16:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.5.4)  19 MAY 2018 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1886,45 +1886,7 @@ File: docs/task.pdf Graphic file (type pdf)
 <use docs/task.pdf, page 1>
 File: docs/task.pdf Graphic file (type pdf)
 <use docs/task.pdf, page 1>
- [2]
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 1>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 1>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 1>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 1>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 1>
- [3]
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 2>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 2>
-File: docs/scoreTable.pdf Graphic file (type pdf)
-<use docs/scoreTable.pdf, page 2>
-
-[4]
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf, page 1>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf, page 1>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf, page 1>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf, page 1>
-File: docs/statement.pdf Graphic file (type pdf)
-<use docs/statement.pdf, page 1>
- [5] (./main.cfg)
+ [2] (./main.cfg)
 \openout2 = `abstract.aux'.
 
  (./abstract.tex (./abstract.cfg)
@@ -2146,170 +2108,52 @@ Overfull \hbox (33.2533pt too wide) in paragraph at lines 463--463
  []
 
 [24]
+File: pictures/energyextra.png Graphic file (type bmp)
+<pictures/energyextra.png>
+ [25]
 File: pictures/datatype-die.png Graphic file (type bmp)
 <pictures/datatype-die.png>
- [25] [26]
+File: pictures/siwang-routing.png Graphic file (type bmp)
+<pictures/siwang-routing.png>
+File: pictures/routing-success.png Graphic file (type bmp)
+<pictures/routing-success.png>
+ [26] [27]
 Chapter 4.
-[27
+[28
 
-] (./main.bbl) [28
+] (./main.bbl) [29
 
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 21.07874pt
-(hyperref)                replaced by space on input line 497.
+(hyperref)                replaced by space on input line 516.
 
-[29
-
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 24.09pt
-(hyperref)                replaced by space on input line 503.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 12.045pt
-(hyperref)                replaced by space on input line 506.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 12.045pt
-(hyperref)                replaced by space on input line 520.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
 [30
 
-]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 1>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 1>
- [31
-
 
 ]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 1>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 1>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 1>
- [32]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 2>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 2>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 2>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 2>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 2>
- [33]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 3>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 3>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 3>
- [34]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 4>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 4>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 4>
- [35]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 5>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 5>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 5>
- [36]
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 6>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 6>
-File: docs/translation.pdf Graphic file (type pdf)
-<use docs/translation.pdf, page 6>
- [37]
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 1>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 1>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 1>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 1>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 1>
- [38]
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 2>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 2>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 2>
- [39]
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
- [40]
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
- [41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 571.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 571.
- (./main.aux
-(./abstract.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 571.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 571.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+ (./main.aux (./abstract.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 558.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0A0479124C585C0F463CB2459E695221.
+(rerunfilecheck)             Checksum: 0E2461CB472E91CAF807D8D2EBF71EC8.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 571.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
  ) 
 Here is how much of TeX's memory you used:
- 28958 strings out of 492970
- 561462 string characters out of 6137299
- 665481 words of memory out of 5000000
- 32500 multiletter control sequences out of 15000+600000
- 540972 words of font info for 105 fonts, out of 8000000 for 9000
+ 28829 strings out of 492970
+ 554662 string characters out of 6137299
+ 665375 words of memory out of 5000000
+ 32382 multiletter control sequences out of 15000+600000
+ 540940 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,19n,90p,10449b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,18n,90p,10449b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (50 pages).
+Output written on main.pdf (36 pages).

@@ -24,12 +24,12 @@
 \newpage
 
 % 成绩评定表
-\includepdf[pages=-]{docs/scoreTable.pdf}  
-\newpage
+%\includepdf[pages=-]{docs/scoreTable.pdf}  
+%\newpage
 
 % 诚信声明
-\includepdf[pages=-]{docs/statement.pdf} 
-\newpage
+%\includepdf[pages=-]{docs/statement.pdf} 
+%\newpage
 
 \input{main.cfg}    % Main items 
 \include{abstract}  % Abstract
@@ -466,11 +466,16 @@ $M^{’}_B$ =  \{$C_m$,$C_{m+1}$,$\cdots$,$C_{n-2}$,$C_{C_{GROUP}-1}$ \}
    \end{figure}
    
   \subsection{网络平均寿命}
-  文中给出了两种路由策略，一种先验式路由协议，一种按需路由协议，这两种路由策略的应用场景有所区别，在数据传送活动较少的区域，按需路由协议理因为其实时性的特点，应当有着更加优秀与时延与能耗，在数据传送活动较多的区域，先验式路由协议可以节省大量路由数据包，因此可以减少路由包对链路的影响，从而获得更佳的能耗比与时延。下面图中给出了不同数据活动比（活动时间占总系统运行时间的比例）下的两种路由模式的能耗比例
-  
-  由图可知， 
+  文中给出了两种路由策略，一种先验式路由协议，一种按需路由协议，这两种路由策略的应用场景有所区别，在数据传送活动较少的区域，按需路由协议理因为其实时性的特点，应当有着更加优秀的能耗，在数据传送活动较多的区域，先验式路由协议可以节省大量路由数据包，从而获得更佳的能耗比。图\ref{energyextra}中给出了不同数据活动比（活动时间占总系统运行时间的比例）下的两种路由模式的能耗比例
+   \begin{figure}[htbp]
+\centering %使插入的图片居中显示
+\includegraphics[scale=0.3]{pictures/energyextra.png} 
+\caption{路由类型与剩余能量比例 } %插入图片的标题，一般放在图片的下方，放在表格的上方
+\label{energyextra}
+\end{figure}
+  由图可知，按需路由协议在进行少量通信的时候可以节省更多能量，大于70的活动时间比时能耗将会高于先验路由协议，所以在数据活动剧烈的区域应当优先使用先验式路由协议，相反则优先使用按需路由协议。
   \subsection{传送数据类型}
-  对于网络中不同的数据类型要求，适当的路由选择方式可以有效延长整个网络的节点运行时间。所以给出了两种数据包类型，一种低时延数据包和一种最长网络寿命数据包。低时延数据包由于会长时间使用最短时延线路，将会先出现死亡节点，通过观察第一个死亡节点的出现时间，可以估计整个网络的寿命，所以代码实现中，会对所有节点初始能量设置为11000内的随机数。图\ref{datatype-die}中给出了首次出现节点死亡的时间对比。
+  对于网络中不同的数据类型要求，适当的路由选择方式可以有效延长整个网络的节点运行时间。所以给出了两种数据包类型，一种低时延数据包和一种最长网络寿命数据包。低时延数据包由于会长时间使用最短时延线路，将会先出现死亡节点，通过观察第一个死亡节点的出现时间，可以估计整个网络的寿命，所以代码实现中，会对所有节点初始能量设置为随机数。图\ref{datatype-die}中给出了首次出现节点死亡的时间对比。
  
   \begin{figure}[htbp]
 \centering %使插入的图片居中显示
@@ -481,11 +486,25 @@ $M^{’}_B$ =  \{$C_m$,$C_{m+1}$,$\cdots$,$C_{n-2}$,$C_{C_{GROUP}-1}$ \}
   图中可以看出，使用第二种路由方案可以有效延长首个节点死亡时间，同理可以增加整个网络的平均寿命，但是这是以不能取得最短时延作为代价的，
   在真正的网络中，每个节点都是自私的，不会有设备愿意承担超过发送自身需要的数据之外的功能，因为这会导致自身的能量优先消耗完，所以对于大量数据要进行传输，同时时延要求不高，建议优先使用最长寿命的路由方案，减少对其他设备的负担同时增加网络的流量。
   \section{拓扑发现的另一种方案}
-  \subsection{成簇}
   当我们把延长网络寿命的任务不仅仅放置在路由协议的设计上，而同时插入在拓扑发现协议中，应该可以获得更长的网络寿命。在成簇阶段，上面的算法是将子节点数目最多者设置为簇头，但是簇头的能量却有可能是最小的，这样的条件下就会多次重复选举簇头，为了减少重复选举过程，我们可以在选举过程中将能量作为优先考虑要素，抱着这种想法在同样的环境下进行了模拟。
-  下图中给出了
+  下图中给出了在这种情况，首个节点出现死亡的时间的对比，以及相同条件下的组网成功率对比。如图中所示，虽然选举能量最大者作为簇头可以有效延长首节点死亡时间，但是组网成功率低于最大连通性的簇头选举方法，网络寿命与最佳连通性两者之间如果在提出的选举簇头的方案上做改变并不能同时满足。
+   \begin{figure}[htbp]
+\centering %使插入的图片居中显示
+\includegraphics[scale=0.3]{pictures/siwang-routing.png} 
+\caption{首节点死亡时间对比 } %插入图片的标题，一般放在图片的下方，放在表格的上方
+\label{siwang-routing}
+\end{figure}
+ \begin{figure}[htbp]
+\centering %使插入的图片居中显示
+\includegraphics[scale=0.3]{pictures/routing-success.png} 
+\caption{组网成功率对比 } %插入图片的标题，一般放在图片的下方，放在表格的上方
+\label{routing-success}
+\end{figure}
   \chapter{总结与展望}
-  上文中模拟了从节点交会到正常通信的全过程，但是文章的缺点也是显而易见的，成簇的算法作为一种分布式与集中式两者的妥协产生的结果，在获得了两者的部分优点的条件下，也同样具备了两者的缺点，簇头作为网络中权值较重的节点，担任着本不应该由普通节点担任的责任，这样实际上破坏了节点间的公平性，所以若是想要解决这个问题，需要提出一种周期性簇头轮换策略，但是又应该保证轮换过程中簇结构不会发生较大改变，避免对正常通信产生过大的干扰，这要求提出一个能量与连通性之间的权值，综合考虑两种因素之后决定应该由那个节点担当簇头，另外一种策略就是抛弃分簇思想直接从分布式结构入手，这样符合了节点间的公平性，但是也不再拥有低难度的设计参考，对系统方案的设计者提出了更高的要求，完全平均权值的无线网络目前依然是不存在的，既要满足节点的自私策略又要获得最佳的通信效果与网络寿命。
+\section{论文总结}
+  本文给出了认识无线电组网的一种策略，方案中包括了从节点交汇到路由发现和数据传输的整个阶段，第二章中详细地对算法的执行过程进行了描述，并在第三章中给出了仿真结果与分析，并尝试了一种改进策略。
+ \section{论文展望}
+  上文中模拟了从节点交会到正常通信的全过程，但是文章的缺点也是显而易见的，成簇的算法作为一种分布式与集中式两者的妥协产生的结果，在获得了两者的部分优点的条件下，也同样具备了两者的缺点，簇头作为网络中权值较重的节点，担任着本不应该由普通节点担任的责任，这样实际上破坏了节点间的公平性，所以若是想要解决这个问题，需要提出一种周期性簇头轮换策略，但是又应该保证轮换过程中簇结构不会发生较大改变，避免对正常通信产生过大的干扰，这需要一个能量与连通性之间的权值，综合考虑两种因素之后决定应该由那个节点担当簇头，另外一种策略就是抛弃分簇思想直接从分布式结构入手，这样符合了节点间的公平性，但是也不再拥有低难度的设计参考，对系统方案的设计者提出了更高的要求，完全平均权值的无线网络目前依然是不存在的，既要满足节点的自私策略又要获得最佳的通信效果与网络寿命。
 %%%%%%%%%%%%%%%%%%%%%%% Main Area ENDs Here %%%%%%%%%%%%%%%%%%%%%%%%
 %\let\cleardoublepage=\cleardoublepagebak
 % Reference
@@ -496,76 +515,44 @@ $M^{’}_B$ =  \{$C_m$,$C_{m+1}$,$\cdots$,$C_{n-2}$,$C_{C_{GROUP}-1}$ \}
 % Thanks to page
 \clearpage\phantomsection\addcontentsline{toc}{chapter}{致\qquad{}谢}
 \chapter*{致\qquad{}谢}
-\normalsize\thankwords
-
+  normalize
 % Appendix
-\chapter*{附\qquad{}录}
-\phantomsection\addcontentsline{toc}{chapter}{附\qquad{}录}
 
-\phantomsection
-\addcontentsline{toc}{section}{附录1\quad{}缩略语表}
-\section*{附录1\quad{}缩略语表}
-\begin{center}
-	\begin{tabular}{ccc}
-		\textbf{英文缩写} & \textbf{英文名称} & \textbf{中文} \\
-		\hline
-		AE & autoencoder & 自编码器\\
-		CRF & conditional random field & 条件随机场\\
-		LR & logistic regression & 逻辑回归\\
-		LSTM & Long Short Term Memory & 长短时记忆单元 \\
-	\end{tabular}
-\end{center}
-
-\phantomsection
-\addcontentsline{toc}{section}{附录2\quad{}数学符号}
-\section*{附录2\quad{}数学符号}
-\begin{center}
-	\begin{tabular}{ccc}
-		\multicolumn{2}{c}{\textbf{数和数组}} \\
-		\\
-		$a$ & 标量（整数或实数）\\
-		$\bm{a}$ & 向量\\
-		$dim()$ & 向量的维数\\
-		$\bm{A}$ & 矩阵\\
-		$\bm{A}^\mathrm{T}$ & 矩阵$\textbf{A}$的转置\\
-		$\bm{I}$ & 单位矩阵（维度依据上下文而定） \\
- 		$diag(\bm{a})$ & 对角方阵，其中对角元素由向量$\bm{a}$确定 \\
-
-	\end{tabular}
-\end{center}
-
-\newpage\backmatter
+%\newpage\backmatter
 % Translation
-\chapter*{外\quad{}文\quad{}译\quad{}文}
-\vspace{8mm}
+%\chapter*{外\quad{}文\quad{}译\quad{}文}
+%\vspace{8mm}
 
-\thispagestyle{empty}
+%\thispagestyle{empty}
 
-\begin{center}
-\sihao\heiti{真假新闻的在线传播}
+%\begin{center}
+%\sihao\heiti{多跳多无线电认知网络中频谱切换调度与路由的联合优化}
 
-\xiaosihao\songti{Soroush Vosoughi, Deb Roy, Sinan Aral}
+%\xiaosihao\songti{Mustafa Ozger, Fatih Alagoz, and Ozgur B. Akan }
 
-\xiaosihao\songti{麻省理工学院}
-\end{center}
+%\xiaosihao\songti{IEEE Communications Magazine}
+%\end{center}
 
-\songti{}
-决策、合作、通信和市场领域的基础理论全都将对真实或准确度的概念化作为几乎一切人类努力的核心。然而，不论是真实信息还是虚假信息都会于在线媒体上迅速传播。定义什么是真、什么是假成了一种常见的政治策略，而不是基于一些各方同意的事实的争论。我们的经济也难免遭受虚假信息传播的影响。虚假流言会影响股价和大规模投资的动向，例如，在一条声称巴拉克·奥巴马在爆炸中受伤的推文发布后，股市市值蒸发了1300亿美元。的确，从自然灾害到恐怖袭击，我们对一切事情的反应都受到了扰乱。
-新的社交网络技术在使信息的传播速度变快和规模变大的同时，也便利了不实信息（即不准确或有误导性的信息）的传播。然而，尽管我们对信息和新闻的获取越来越多地收到这些新技术的引导，但我们仍然对他们在虚假信息传播上的作用知之甚少。尽管媒体对假新闻传播的轶事分析给予了相当多的关注，但仍然几乎没有针对不实信息扩散或其发布源头的大规模实证调查。目前，虚假信息传播的研究仅仅局限于小的、局部的样本的分析上，而这些分析忽略了两个最重要的科学问题：真实信息和虚假信息的传播有什么不同？哪些人类判断中的因素可以解释这些不同？
-
+%\songti{}
+%\chapter{摘要}
+ % 认知无线电可以动态频谱访问在空闲时使用许可的频谱。CR技术被应用于无线自组网和传感器网络中，分别形成了CRAHNs和CRSNs。簇是一种高效的拓扑管理技术，通过对CRAHNs和CRSNs中节点的CR能力来规范通信和分配频谱资源。在本文中，我们将深入研究这些网络中的拓扑、频谱和能量管理等簇的优点和功能。我们还概述了在CRAHNs和CRSNs中集群的动机和挑战。对现有的成簇方案进行了回顾和比较。最后，我们揭示了在多通道CRAHNs和CRSNs中对频谱感知的主要想法和可能的解决方案。
+%\chapter{前言}
+ % 对无线通信的过度需求导致了频谱短缺，虽然没有授权的频谱频带过于拥挤，但许可的频段并没有得到有效利用。认知无线电(CR)是一种很有希望的解决方案，它可以通过使二级用户(SUs)的动态频谱访问(DSA)机会性使用空闲的许可频带。因此，CR通过访问许可的通道，而无需对授权用户进行任何干扰，从而保证主用户的通信。
+  
+  %在无线网络中，认知用户与主用户共存，这种网络被命名为认知网络。如图1所示，它们可以被划分为四个不同维度的区域。首先，这样的网络可以利用单一的许可频段或多个授权信道。第二，这个网络可能有一个集中式的或分布式的网络架构。集中式的无线网络，即认知无线电网络(CRNs)，用基站来管理无线通信。另一方面，在分布式系统中，有一个没有任何中央实体来规范二次通信的扁平架构。这些分布式的支持cr的无线网络可以被称为认知无线电特别和传感器网络。认知无线电自组网(CRAHNs)是由CR技术支持的平面架构，以充分利用稀缺的许可频谱[1]。
 % Translated Article
-\thispagestyle{empty}
-\begin{center}
-\includepdf[pages=1, scale=0.95, pagecommand=\heiti\sanhao{外\quad{}文\quad{}原\quad{}文}]{docs/translation.pdf}
-\includepdf[pages=2-, scale=0.95, pagecommand={}]{docs/translation.pdf}
-\end{center}
+%\thispagestyle{empty}
+%\begin{center}
+%\includepdf[pages=1, scale=0.95, pagecommand=\heiti\sanhao{外\quad{}文\quad{}原\quad{}文}]{docs/translation.pdf}
+%\includepdf[pages=2-, scale=0.95, pagecommand={}]{docs/translation.pdf}
+%\end{center}
 
 % 开题报告
-\includepdf[pages=-]{docs/openingReport.pdf} 
+%\includepdf[pages=-]{docs/openingReport.pdf} 
 
 
 % 中期检查表
-\includepdf[pages=-]{docs/interimReport.pdf} 
+%\includepdf[pages=-]{docs/interimReport.pdf} 
 
 
 \end{document}
