@@ -8,7 +8,7 @@ IEEE Transactions on Communications.~55~(1).
 2007, 1:  21--24.
 
 \bibitem{pinpu}
-D~Cabric~R W~B, A~Tkachenko.
+D~Cabric~R W~Brodersen, A~Tkachenko.
 Spectrum Sensing Measurements of Pilot Energy and Collaborative Detection~[C].
 In MILCOM 2006 - 2006 IEEE Military Communications conference, 2006:  1--7.
 
@@ -20,14 +20,14 @@ IEEE Access.~5~(3).
 2017, 5:  9266--9276.
 
 \bibitem{Peipei}
-A~Ghasemi~E S~S.
+A~Ghasemi~E S~Sousa.
 Collaborative spectrum sensing for opportunistic access in fading
   environments~[C].
 In First IEEE International Symposium on New Frontiers in Dynamic Spectrum
   Access Networks, 2005:  131--136.
 
 \bibitem{hezuo}
-X~Liu~Z~D.
+X~Liu~Z~Ding.
 A Channel Evacuation Protocol for Spectrum-Agile Networks~[C].
 In 2007 2nd IEEE International Symposium on New Frontiers in Dynamic Spectrum
   Access Networks, 2007:  292--302.
@@ -39,7 +39,7 @@ IEEE Journal on Selected Areas in Communications.~29~(4).
 2011, 4:  757--769.
 
 \bibitem{uafs}
-Chunyi~Peng~B Y~Z, Haitao~Zheng.
+Chunyi~Peng~Ben Y~Zhao, Haitao~Zheng.
 Utilization and fairness in spectrum assignment for opportunistic spectrum
   access~[J].
 Mobile Networks and Applications.~11~(4).
@@ -60,7 +60,7 @@ IEEE Transactions on Vehicular Technology.~60~(6).
 2011, 6:  2714--2729.
 
 \bibitem{luyou2}
-Saleem~Y, Yau~K-L~A, Mohamad~H~et~al.
+Saleem~Yasir, Yau~Kok-Lim~Alvin, Mohamad~Hafizal~et~al.
 SMART: A SpectruM-Aware ClusteR-based rouTing scheme for distributed cognitive
   radio networks~[J].
 Computer Networks.~01.
