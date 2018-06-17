@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.6.15)  15 JUN 2018 21:43
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.6.15)  17 JUN 2018 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2325,36 +2325,29 @@ File: docs/openingReport.pdf Graphic file (type pdf)
 File: docs/openingReport.pdf Graphic file (type pdf)
 <use docs/openingReport.pdf, page 12>
  [59]
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 13>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 13>
-File: docs/openingReport.pdf Graphic file (type pdf)
-<use docs/openingReport.pdf, page 13>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf, page 1>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf, page 1>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf, page 1>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf, page 1>
+File: docs/interimReport.pdf Graphic file (type pdf)
+<use docs/interimReport.pdf, page 1>
  [60]
 File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf>
+<use docs/interimReport.pdf, page 2>
 File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf>
+<use docs/interimReport.pdf, page 2>
 File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 1>
+<use docs/interimReport.pdf, page 2>
 
 [61]
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
-File: docs/interimReport.pdf Graphic file (type pdf)
-<use docs/interimReport.pdf, page 2>
- [62]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 726.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 726.
  (./main.aux (./abstract.aux))
@@ -2365,12 +2358,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 726.
  ) 
 Here is how much of TeX's memory you used:
- 28948 strings out of 492970
- 559841 string characters out of 6137298
- 664560 words of memory out of 5000000
- 32490 multiletter control sequences out of 15000+600000
+ 28946 strings out of 492970
+ 559760 string characters out of 6137298
+ 664578 words of memory out of 5000000
+ 32488 multiletter control sequences out of 15000+600000
  540956 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,19n,90p,10449b,1778s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (69 pages).
+Output written on main.pdf (68 pages).
